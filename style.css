@@ -1,0 +1,13 @@
+.square {
+    height: 20px;
+    width: 20px;
+    border: 1px solid;
+
+}
+.container {
+    display: flex;
+    padding-bottom: 10px;
+}
+.palette-container {
+    display: flex;
+}
