@@ -11,9 +11,15 @@ for(let i=1;i<=12;i++){
         squareElement.className = "square"
         squareElement.id = i+j
         rowElement.appendChild(squareElement); 
-        let buttonClick = squareElement.addEventListener('click', (evt) => {
+        // let mouseDown = squareElement.addEventListener('mousedown', (evt) => {
+        //     evt.target.style.background = color;
+        // }) 
+        // let mouseEnter = squareElement.addEventListener('mouseenter', (evt) => {
+        //     evt.target.style.background = color;
+        // }) 
+        let mounseUp = squareElement.addEventListener('mouseover', (evt) => {
             evt.target.style.background = color;
-        })
+        }) 
     }
 }
 
@@ -22,6 +28,7 @@ let colorIndicator = document.createElement('div');
 colorIndicator.className = 'square';
 colorIndicator.style.borderRadius = '15px';
 palette.appendChild(colorIndicator);
+
 
 for(let i=0;i<=9;i++){
     let paletteElement = document.createElement('div');
@@ -32,4 +39,5 @@ for(let i=0;i<=9;i++){
         color = evt.target.style.background;
         colorIndicator.style.background = color;
     })
+
 }
